@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3><center>JavaScript Classes!</center></h3>
+    <p id="unity"></p>
+    <p id="erity"></p>
+    <script>
+        class dhairlod
+        {
+            constructor(name,year)
+            {
+                this.name=name;
+                this.year=year;
+            }
+            age()
+            {
+            let date=new Date();
+            return date.getFullYear()+this.year
+            }
+        }
+        student1=new dhairlod("Dhairya",2010);
+        document.getElementById("unity").innerHTML="My name is " +student1.name +" I was born in " +student1.year
+        student2=new dhairlod("Harsh",2016);
+        document.getElementById("erity").innerHTML="My name is " +student2.name +" I was born in " +student2.year
+    </script>
+</body>
+</html>
